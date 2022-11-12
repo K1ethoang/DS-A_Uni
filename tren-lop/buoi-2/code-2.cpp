@@ -116,7 +116,7 @@ void SList::insertBefore(Node *p, const Item &v)
     }
     else
     {
-        for (Node *t = head; t = t->pNext; t != NULL)
+        for (Node *t = head; t != NULL; t = t->pNext)
         {
             if (t->pNext == p)
             {
